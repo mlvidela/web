@@ -1,6 +1,6 @@
 body {
   background-color: black;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto';
   font-size: 12px;
   color: white;
   margin: 0;
@@ -12,7 +12,7 @@ h1,
   width: 100%;
   text-align: center;
   font-family: 'Whisper', cursive;
-  font-size: 35px;
+  font-size: 3rem; 
   color: rgb(190, 175, 163);
   margin: 0;
 }
@@ -26,7 +26,7 @@ h1,
 
 .navbar-toggler .bi {
   color: rgb(208, 201, 192);
-  font-size: 18px;
+  font-size: 1.2rem;
 }
 
 button.navbar-toggler {
@@ -58,10 +58,28 @@ button.navbar-toggler:active {
   outline: none;
 }
 
-.offcanvas-body .nav-link.btn {
+.nav-link {
+  font-size: 0.9rem;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #c084fc;
+  text-decoration: none;
+}
+
+button.nav-link {
+  background: none;
+  border: none;
   padding: 0;
   text-align: left;
-  font-size: 14px;
+  width: 100%;
+}
+
+button.nav-link:focus {
+  outline: none;
+  box-shadow: none;
 }
 
 #portfolioSubmenu ul {
@@ -71,13 +89,9 @@ button.navbar-toggler:active {
 
 #portfolioSubmenu .nav-link {
   padding: 0.25rem 0;
-  font-size: 13px;
-  color: white;
-}
-
-#portfolioSubmenu .nav-link:hover {
- background-color: white;
- color: #c084fc !important;
+  font-size: 0.85rem;
+  background-color: white;
+  color: #c084fc !important;
 }
 
 main {
@@ -88,4 +102,44 @@ main {
 main img {
   max-width: 100%;
   height: auto;
+}
+
+/* Media Queries*/
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem; 
+  }
+
+  .nav-link,
+  button.nav-link {
+    font-size: 0.9rem;
+  }
+
+  .btn-close {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .navbar-toggler .bi {
+    font-size: 1rem;
+  }
+
+  .nav-link,
+  button.nav-link {
+    font-size: 0.85rem;
+  }
+
+  #portfolioSubmenu .nav-link {
+    font-size: 0.8rem;
+  }
+
+  .btn-close {
+    font-size: 9px;
+  }
 }
