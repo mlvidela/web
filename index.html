@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Whisper&display=swap" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
   <title>Macarena Videla</title>
 </head>
@@ -25,12 +26,10 @@
 
     <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
       <div class="offcanvas-header justify-content-end">
-        <button class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+        <button class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
-
       <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-
           <li class="nav-item">
             <button class="nav-link active text-start w-100 border-0 bg-transparent text-white" type="button" data-bs-toggle="collapse" data-bs-target="#portfolioSubmenu" aria-expanded="false" aria-controls="portfolioSubmenu">
               Portfolio
@@ -38,19 +37,18 @@
             <div class="collapse ps-3" id="portfolioSubmenu">
               <ul class="list-unstyled">
                 <li>
-                  <a class="nav-link text-white" href="https://drive.google.com/drive/folders/1rAODJlgt2p4OjVAIYD9xet25WsfsiXQu?usp=drive_link" target="_blank">
-                    Democracia: Breve Recuento
+                  <a class="nav-link text-white" href="C:\Users\mlvid\Downloads\Democracia en el Mundo - Macarena Videla.pbix" target="_blank">
+                    Democracy: A Brief Overview
                   </a>
                 </li>
               </ul>
             </div>
           </li>
-
           <li class="nav-item">
-            <a class="nav-link active" href="https://www.linkedin.com/in/macarenalvidela/">Linkedin</a>
+            <a class="nav-link active" href="https://www.linkedin.com/in/macarenalvidela/" target="_blank">LinkedIn</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="CV Macarena Videla - Analista.pdf" download>Currículum</a>
+            <a class="nav-link active" href="CV-MacarenaVidela.pdf" download>Resume</a>
           </li>
         </ul>
       </div>
@@ -58,9 +56,69 @@
   </header>
 
   <main class="mt-5 pt-4 text-center">
-    <img src="Img/Fondo.png" alt="Foto" class="img-fluid" />
+    <img src="Img/Fondo.png" alt="Photo" class="img-fluid" />
+
+    <section class="timeline container py-5">
+      <div class="timeline-item" data-aos="fade-up">
+        <div class="timeline-content mx-auto">
+          <h3>About Me</h3>
+          <p>You can write a short introduction about yourself here.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-aos="fade-down">
+        <div class="timeline-content mx-auto">
+          <h3>Programming Instructor and Educational Tutor</h3>
+          <p><strong>Talento Tech – Government of the City of Buenos Aires</strong><br>
+          April 2022 – Present</p>
+          <ul>
+            <li>Planned and delivered programming classes to youth aged 15–18 (100 students per course)</li>
+            <li>Provided student guidance and mentoring</li>
+            <li>Implemented agile methodologies<li>
+            <li>Coordinated "Digital Women", an initiative for female inclusion in IT</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-aos="fade-left">
+        <div class="timeline-content mx-auto">
+          <h3>Shift Manager</h3>
+          <p><strong>River Plate Vaccination Center – Government of the City of Buenos Aires</strong><br>
+          December 2021 – March 2022</p>
+          <ul>
+            <li>Team leadership of 30 members, providing training and managing performance</li>
+            <li>Optimization of logistical processes within the vaccination center</li>
+            <li>Administrative coordination: citizen assistance, document control, and conflict resolution</li>
+          </ul>
+        </div>
+      </div>
+
+      </div>
+
+      <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-content mx-auto">
+          <h3>Volunteer Work</h3>
+          <ul>
+            <li><strong>AIESEC:</strong> Coordinated incoming international projects and managed volunteer teams
+            </li>
+            <li><strong>Creando Futuro Foundation:</strong> Planned and taught literary workshops and academic support for youth</li>
+          </ul>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    });
+
+  </script>
 </body>
 </html>

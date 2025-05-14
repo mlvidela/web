@@ -1,3 +1,4 @@
+/* Global Styles */
 body {
   background-color: black;
   font-family: 'Roboto';
@@ -12,7 +13,7 @@ h1,
   width: 100%;
   text-align: center;
   font-family: 'Whisper', cursive;
-  font-size: 3rem; 
+  font-size: 3rem;
   color: rgb(190, 175, 163);
   margin: 0;
 }
@@ -90,7 +91,12 @@ button.nav-link:focus {
 #portfolioSubmenu .nav-link {
   padding: 0.25rem 0;
   font-size: 0.85rem;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+#portfolioSubmenu .nav-link:hover {
+  background-color: #dcd6f7;
   color: #c084fc !important;
 }
 
@@ -104,42 +110,86 @@ main img {
   height: auto;
 }
 
-/* Media Queries*/
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 1rem;
+}
 
+.timeline-item {
+  width: 100%;
+  max-width: 800px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-left: 4px solid #dcd6f7;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+}
+
+.timeline-content h3 {
+  color: #dcd6f7;
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+.timeline-content p {
+  color: white;
+}
+
+.timeline-content ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* Responsive Styles */
 @media (max-width: 768px) {
-  h1 {
-    font-size: 2.5rem; 
+  h1,
+  .offcanvas-title {
+    font-size: 2rem;
+    padding: 0 1rem;
   }
 
-  .nav-link,
-  button.nav-link {
-    font-size: 0.9rem;
+  .timeline {
+    padding: 1rem 0.5rem;
+  }
+
+  .timeline-item {
+    padding: 1rem;
+    border-left-width: 3px;
+  }
+
+  .timeline-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .nav-link {
+    font-size: 0.85rem;
   }
 
   .btn-close {
     font-size: 10px;
   }
+
+  main {
+    margin-top: 60px;
+    padding: 0 1rem;
+  }
 }
 
-@media (max-width: 576px) {
-  h1 {
-    font-size: 2rem;
+@media (max-width: 480px) {
+  h1,
+  .offcanvas-title {
+    font-size: 1.7rem;
   }
 
-  .navbar-toggler .bi {
+  .timeline-content h3 {
     font-size: 1rem;
   }
 
-  .nav-link,
-  button.nav-link {
-    font-size: 0.85rem;
-  }
-
-  #portfolioSubmenu .nav-link {
+  .nav-link {
     font-size: 0.8rem;
-  }
-
-  .btn-close {
-    font-size: 9px;
   }
 }
