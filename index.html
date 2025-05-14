@@ -1,124 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Whisper&display=swap" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-  <title>Macarena Videla</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Whisper&display=swap" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+<title>Macarena Videla</title>
 </head>
 
 <body>
-  <header>
-    <nav class="navbar navbar-dark bg-dark fixed-top">
-      <div class="container-fluid position-relative justify-content-center d-flex align-items-center">
-        <h1 class="m-0">Macarena Videla</h1>
-        <button class="navbar-toggler position-absolute end-0 me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-          <i class="bi bi-three-dots-vertical"></i>
-        </button>
-      </div>
-    </nav>
+<header>
+<nav class="navbar navbar-dark bg-dark fixed-top">
+<div class="container-fluid position-relative justify-content-center d-flex align-items-center">
+<h1 class="m-0">Macarena Videla</h1>
+<button class="navbar-toggler position-absolute end-0 me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+<i class="bi bi-three-dots-vertical"></i>
+</button>
+</div>
+</nav>
 
-    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-      <div class="offcanvas-header justify-content-end">
-        <button class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-          <li class="nav-item">
-            <button class="nav-link active text-start w-100 border-0 bg-transparent text-white" type="button" data-bs-toggle="collapse" data-bs-target="#portfolioSubmenu" aria-expanded="false" aria-controls="portfolioSubmenu">
-              Portfolio
-            </button>
-            <div class="collapse ps-3" id="portfolioSubmenu">
-              <ul class="list-unstyled">
-                <li>
-                  <a class="nav-link text-white" href="C:\Users\mlvid\Downloads\Democracia en el Mundo - Macarena Videla.pbix" target="_blank">
-                    Democracy: A Brief Overview
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="https://www.linkedin.com/in/macarenalvidela/" target="_blank">LinkedIn</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="CV-MacarenaVidela.pdf" download>Resume</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </header>
+<div class="offcanvas offcanvas-end text-bg-dark custom-offcanvas" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+<div class="offcanvas-header px-3">
+<button class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+</div>
 
-  <main class="mt-5 pt-4 text-center">
-    <img src="Img/Fondo.png" alt="Photo" class="img-fluid" />
+<div class="offcanvas-body px-2">
+<ul class="navbar-nav justify-content-end flex-grow-1">
+<li class="nav-item">
 
-    <section class="timeline container py-5">
-      <div class="timeline-item" data-aos="fade-up">
-        <div class="timeline-content mx-auto">
-          <h3>About Me</h3>
-          <p>You can write a short introduction about yourself here.</p>
-        </div>
-      </div>
+<button class="nav-link text-start w-100 border-0 bg-transparent text-white ps-2" type="button" data-bs-toggle="collapse" data-bs-target="#teachingSubmenu" aria-expanded="false" aria-controls="teachingSubmenu">
+Teaching
+</button>
+<div class="collapse ps-4 no-transition" id="teachingSubmenu">
+<ul class="list-unstyled">
+<li><a class="nav-link text-white ps-2" href="ruta1" target="_blank">1</a></li>
+</ul>
+</div>
+</li>
 
-      <div class="timeline-item" data-aos="fade-down">
-        <div class="timeline-content mx-auto">
-          <h3>Programming Instructor and Educational Tutor</h3>
-          <p><strong>Talento Tech – Government of the City of Buenos Aires</strong><br>
-          April 2022 – Present</p>
-          <ul>
-            <li>Planned and delivered programming classes to youth aged 15–18 (100 students per course)</li>
-            <li>Provided student guidance and mentoring</li>
-            <li>Implemented agile methodologies<li>
-            <li>Coordinated "Digital Women", an initiative for female inclusion in IT</li>
-          </ul>
-        </div>
-      </div>
+<li class="nav-item">
+<button class="nav-link text-start w-100 border-0 bg-transparent text-white ps-2" type="button" data-bs-toggle="collapse" data-bs-target="#dataSubmenu" aria-expanded="false" aria-controls="dataSubmenu">
+Data
+</button>
+<div class="collapse ps-4 no-transition" id="dataSubmenu">
+<ul class="list-unstyled">
+<li><a class="nav-link text-white ps-2" href="ruta3" target="_blank">Democracy: A Brief Overview</a></li>
+</ul>
+</div>
+</li>
 
-      <div class="timeline-item" data-aos="fade-left">
-        <div class="timeline-content mx-auto">
-          <h3>Shift Manager</h3>
-          <p><strong>River Plate Vaccination Center – Government of the City of Buenos Aires</strong><br>
-          December 2021 – March 2022</p>
-          <ul>
-            <li>Team leadership of 30 members, providing training and managing performance</li>
-            <li>Optimization of logistical processes within the vaccination center</li>
-            <li>Administrative coordination: citizen assistance, document control, and conflict resolution</li>
-          </ul>
-        </div>
-      </div>
+<li class="nav-item">
+<a class="nav-link text-start w-100 border-0 bg-transparent text-white ps-2" href="https://www.linkedin.com/in/macarenalvidela/" target="_blank">GitHub</a>
+</li>
 
-      </div>
+<li class="nav-item">
+<a class="nav-link text-start w-100 border-0 bg-transparent text-white ps-2" href="https://www.linkedin.com/in/macarenalvidela/" target="_blank">LinkedIn</a>
+</li>
 
-      <div class="timeline-item" data-aos="fade-right">
-        <div class="timeline-content mx-auto">
-          <h3>Volunteer Work</h3>
-          <ul>
-            <li><strong>AIESEC:</strong> Coordinated incoming international projects and managed volunteer teams
-            </li>
-            <li><strong>Creando Futuro Foundation:</strong> Planned and taught literary workshops and academic support for youth</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-  </main>
+<li class="nav-item">
+<a class="nav-link text-start w-100 border-0 bg-transparent text-white ps-2" href="Img/CV Macarena Videla - Programming Workshops Leader.pdf" download>Resume</a>
+</li>
+</ul>
+</div>
+</div>
+</header>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<main class="mt-5 pt-4 text-center">
+<img src="Img/Fondo.png" alt="Photo" class="img-fluid" />
+<section class="timeline container py-5">
+<div class="timeline-item" data-aos="fade-up">
+<div class="timeline-content mx-auto">
+<h3>About Me</h3>
+<p>You can write a short introduction about yourself here.</p>
+</div>
+</div>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      AOS.init({
-        duration: 1000,
-        once: true,
-      });
-    });
+<div class="timeline-item" data-aos="fade-down">
+<div class="timeline-content mx-auto">
+<h3>Programming Instructor and Educational Tutor</h3>
+<p><strong>Talento Tech – Government of the City of Buenos Aires</strong><br>April 2022 – Present</p>
+<ul>
+<li>Planned and delivered programming classes to youth aged 15–18 (100 students per course)</li>
+<li>Provided student guidance and mentoring</li>
+<li>Implemented agile methodologies</li>
+<li>Coordinated "Digital Women", an initiative for female inclusion in IT</li>
+</ul>
+</div>
+</div>
 
-  </script>
+<div class="timeline-item" data-aos="fade-left">
+<div class="timeline-content mx-auto">
+<h3>Shift Manager</h3>
+<p><strong>River Plate Vaccination Center – Government of the City of Buenos Aires</strong><br>December 2021 – March 2022</p>
+<ul>
+<li>Team leadership of 30 members, providing training and managing performance</li>
+<li>Optimization of logistical processes within the vaccination center</li>
+<li>Administrative coordination: citizen assistance, document control, and conflict resolution</li>
+</ul>
+</div>
+</div>
+
+<div class="timeline-item" data-aos="fade-right">
+<div class="timeline-content mx-auto">
+<h3>Volunteer Work</h3>
+<ul>
+<li><strong>AIESEC:</strong> Coordinated incoming international projects and managed volunteer teams</li>
+<li><strong>Creando Futuro Foundation:</strong> Planned and taught literary workshops and academic support for youth</li>
+</ul>
+</div>
+</div>
+</section>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+AOS.init({
+duration: 1000,
+once: true,
+});
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+const toggles = document.querySelectorAll('[data-bs-toggle="collapse"]');
+
+toggles.forEach(toggle => {
+toggle.addEventListener("click", function () {
+const targetId = toggle.getAttribute("data-bs-target");
+const targetElement = document.querySelector(targetId);
+
+toggles.forEach(otherToggle => {
+const otherId = otherToggle.getAttribute("data-bs-target");
+const otherElement = document.querySelector(otherId);
+
+if (otherElement !== targetElement && otherElement.classList.contains("show")) {
+const collapseInstance = bootstrap.Collapse.getInstance(otherElement);
+if (collapseInstance) {
+collapseInstance.hide();
+} else {
+new bootstrap.Collapse(otherElement, { toggle: false }).hide();
+}
+}
+});
+});
+});
+});
+</script>
 </body>
 </html>
