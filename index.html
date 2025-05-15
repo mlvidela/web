@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Macarena Videla</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Whisper&display=swap" rel="stylesheet" />
@@ -10,9 +11,7 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" rel="stylesheet" />
 <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 <link rel="stylesheet" href="style.css" />
-<title>Macarena Videla</title>
 </head>
-
 <body>
 <header>
 <nav class="navbar navbar-dark bg-dark fixed-top">
@@ -23,80 +22,99 @@
 </button>
 </div>
 </nav>
-
-<div class="offcanvas offcanvas-end text-bg-dark custom-offcanvas" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+<div class="offcanvas offcanvas-end text-bg-dark custom-offcanvas" tabindex="-1" id="offcanvasDarkNavbar">
 <div class="offcanvas-header px-3">
 <button class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 </div>
 
 <div class="offcanvas-body px-2">
 <ul class="navbar-nav justify-content-end flex-grow-1">
-<li class="nav-item">
 
-<button class="nav-link text-start w-100 border-0 bg-transparent text-white ps-2" type="button" data-bs-toggle="collapse" data-bs-target="#teachingSubmenu" aria-expanded="false" aria-controls="teachingSubmenu">
-Teaching
-</button>
+<li class="nav-item">
+<button class="nav-link" type="button" data-bs-toggle="collapse" data-bs-target="#teachingSubmenu">Teaching</button>
 <div class="collapse ps-4 no-transition" id="teachingSubmenu">
 <ul class="list-unstyled">
-<li><a class="nav-link text-white ps-2" href="ruta1" target="_blank">1</a></li>
+<li><a class="nav-link text-white ps-2" href="https://wordwall.net/resource/23248070/cu%c3%a1ntos-datos-curiosos-sobre-ciencia-conoces" target="_blank">Fun Facts About Science</a></li>
+<li><a class="nav-link text-white ps-2" href="Files\DW1 - Semáforo.pptx" target="_blank">Web Development</a></li>
+<li><a class="nav-link text-white ps-2" href="Img\AP GAMERS.png" target="_blank">AP Gamers</a></li>
 </ul>
 </div>
 </li>
 
 <li class="nav-item">
-<button class="nav-link text-start w-100 border-0 bg-transparent text-white ps-2" type="button" data-bs-toggle="collapse" data-bs-target="#dataSubmenu" aria-expanded="false" aria-controls="dataSubmenu">
-Data
-</button>
+<button class="nav-link" type="button" data-bs-toggle="collapse" data-bs-target="#dataSubmenu">Data</button>
 <div class="collapse ps-4 no-transition" id="dataSubmenu">
 <ul class="list-unstyled">
-<li><a class="nav-link text-white ps-2" href="Files\Democracia en el Mundo - Macarena Videla.pbix" target="_blank">Democracy: A Brief Overview</a></li>
+<li><a class="nav-link text-white ps-2" href="Files/Democracia en el Mundo - Macarena Videla.pbix" target="_blank">Democracy: A Brief Overview</a></li>
 </ul>
 </div>
 </li>
 
 <li class="nav-item">
-<a class="nav-link text-start w-100 border-0 bg-transparent text-white ps-2" href="https://github.com/mlvidela/web.git" target="_blank">GitHub</a>
+<button class="nav-link" type="button" data-bs-toggle="collapse" data-bs-target="#certificationsSubmenu">Certifications</button>
+<div class="collapse ps-4 no-transition" id="certificationsSubmenu">
+<ul class="list-unstyled">
+<li><a class="nav-link text-white ps-2" href="Files\Data Analytics - Coder.png" target="_blank">Data Analytics</a></li>
+<li><a class="nav-link text-white ps-2" href="Files\STEM - UTN.png" target="_blank">STEM</a></li>
+<li><a class="nav-link text-white ps-2" href="Files\Data Governance.jpeg" target="_blank">Data Governance</a></li>
+<li><a class="nav-link text-white ps-2" href="Files\Communicative Leaders.jpeg" target="_blank">Communicative Leaders</a></li>
+<li><a class="nav-link text-white ps-2" href="Files\Future Leaders.pdf" target="_blank">Future Leaders</a></li>
+</ul>
+</div>
 </li>
 
-<li class="nav-item">
-<a class="nav-link text-start w-100 border-0 bg-transparent text-white ps-2" href="https://www.linkedin.com/in/macarenalvidela/" target="_blank">LinkedIn</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link text-start w-100 border-0 bg-transparent text-white ps-2" href="Files\CV Macarena Videla - Programming Workshops Leader.pdf" download>Resume</a>
-</li>
+<li class="nav-item"><a class="nav-link" href="https://github.com/mlvidela/web.git" target="_blank">GitHub</a></li>
+<li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/macarenalvidela/" target="_blank">LinkedIn</a></li>
+<li class="nav-item"><a class="nav-link" href="Files/CV Macarena Videla - Programming Workshops Leader.pdf" download>Resume</a></li>
 </ul>
 </div>
 </div>
 </header>
 
-<main class="mt-5 pt-4 text-center">
-<img src="Img/Fondo.png" alt="Photo" class="img-fluid" />
-<section class="timeline container py-5">
-<div class="timeline-item" data-aos="fade-up">
-<div class="timeline-content mx-auto">
-<h3>About Me</h3>
-<p>You can write a short introduction about yourself here.</p>
+<main class="mt-5 pt-4">
+
+<section id="aboutSection" class="container d-flex align-items-center justify-content-center flex-column">
+  <img id="aboutPhoto" src="Img/Fondo.png" alt="Photo" class="img-fluid about-clickable" onclick="toggleAboutMe()" />
+
+  <div id="aboutMeCard" class="card d-none about-clickable" data-aos="fade-up" onclick="toggleAboutMe()">
+    <div class="card-body">
+      <h5 class="card-title">About Me</h5>
+      <p class="card-text">I was born in Viedma (Patagonia)</p>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="timeline">
+<div class="card-group" data-aos="fade-left">
+<div class="card">
+<img src="Img/Agile.jpeg" class="card-img-top" alt="Skills">
+</div>
+<div class="card">
+<img src="Img/Skills.jpeg" class="card-img-top" alt="Skills">
 </div>
 </div>
 
-<div class="timeline-item" data-aos="fade-down">
-<div class="timeline-content mx-auto">
-<h3>Programming Instructor and Educational Tutor</h3>
-<p><strong>Talento Tech – Government of the City of Buenos Aires</strong><br>April 2022 – Present</p>
+<div class="card-group" data-aos="fade-up">
+<div class="card">
+<img src="Img/Tutora.png" class="card-img-top" alt="Tutora">
+<div class="card-body">
+<h5 class="card-title">Programming Instructor and Educational Tutor</h5>
+<p><strong>Talento Tech / Aprendé Programando – Government of the City of Buenos Aires</strong><br>April 2022 – Present </p>
 <ul>
 <li>Planned and delivered programming classes to youth aged 15–18 (100 students per course)</li>
-<li>Provided student guidance and mentoring</li>
 <li>Implemented agile methodologies</li>
 <li>Coordinated "Digital Women", an initiative for female inclusion in IT</li>
 </ul>
 </div>
 </div>
-
-<div class="timeline-item" data-aos="fade-left">
-<div class="timeline-content mx-auto">
-<h3>Shift Manager</h3>
-<p><strong>River Plate Vaccination Center – Government of the City of Buenos Aires</strong><br>December 2021 – March 2022</p>
+<div class="card">
+<img src="Img/Jefa de Turno.jpeg" class="card-img-top" alt="Shift Manager">
+<div class="card-body">
+<h5 class="card-title">Shift Manager</h5>
+<p><strong>River Plate Vaccination Center – Government of the City of Buenos Aires</strong><br>
+December 2021 – March 2022</p>
 <ul>
 <li>Team leadership of 30 members, providing training and managing performance</li>
 <li>Optimization of logistical processes within the vaccination center</li>
@@ -104,55 +122,36 @@ Data
 </ul>
 </div>
 </div>
-
-<div class="timeline-item" data-aos="fade-right">
-<div class="timeline-content mx-auto">
-<h3>Volunteer Work</h3>
+<div class="card">
+<img src="Img/AIESEC.jpg" class="card-img-top" alt="Volunteer Work">
+<div class="card-body">
+<h5 class="card-title">Volunteer Work</h5>
 <ul>
 <li><strong>AIESEC:</strong> Coordinated incoming international projects and managed volunteer teams</li>
+<br>
 <li><strong>Creando Futuro Foundation:</strong> Planned and taught literary workshops and academic support for youth</li>
 </ul>
+</div>
 </div>
 </div>
 </section>
 </main>
 
+<footer class="footer">
+<p>Created with love by Macarena Videla</p>
+<div class="logo-container">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5 Logo" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3 Logo" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap Logo" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript Logo" />
+</div>
+</footer>
+
+
+
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-AOS.init({
-duration: 1000,
-once: true,
-});
-});
-</script>
-
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-const toggles = document.querySelectorAll('[data-bs-toggle="collapse"]');
-
-toggles.forEach(toggle => {
-toggle.addEventListener("click", function () {
-const targetId = toggle.getAttribute("data-bs-target");
-const targetElement = document.querySelector(targetId);
-
-toggles.forEach(otherToggle => {
-const otherId = otherToggle.getAttribute("data-bs-target");
-const otherElement = document.querySelector(otherId);
-
-if (otherElement !== targetElement && otherElement.classList.contains("show")) {
-const collapseInstance = bootstrap.Collapse.getInstance(otherElement);
-if (collapseInstance) {
-collapseInstance.hide();
-} else {
-new bootstrap.Collapse(otherElement, { toggle: false }).hide();
-}
-}
-});
-});
-});
-});
-</script>
+<script src="script.js"></script>
 </body>
 </html>
