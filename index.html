@@ -12,9 +12,14 @@
 <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 <header>
+
+<!-- Menú -->
+
 <nav class="navbar navbar-dark bg-dark fixed-top">
+
 <div class="container-fluid position-relative justify-content-center d-flex align-items-center">
 <h1 class="m-0">Macarena Videla</h1>
 <button class="navbar-toggler position-absolute end-0 me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
@@ -34,9 +39,10 @@
 <button class="nav-link" type="button" data-bs-toggle="collapse" data-bs-target="#teachingSubmenu">Teaching</button>
 <div class="collapse ps-4 no-transition" id="teachingSubmenu">
 <ul class="list-unstyled">
+<li><a class="nav-link text-white ps-2" href="Files\Teaching\Capacitación - MD.pptx" target="_blank">Presentation - Women in Tech </a></li>
+<li><a class="nav-link text-white ps-2" href="Files\Teaching\Coaching - MD.pptx" target="_blank">Workshop - Women in Tech </a></li>
 <li><a class="nav-link text-white ps-2" href="https://wordwall.net/resource/23248070/cu%c3%a1ntos-datos-curiosos-sobre-ciencia-conoces" target="_blank">Fun Facts About Science</a></li>
-<li><a class="nav-link text-white ps-2" href="Files\DW1 - Semáforo.pptx" target="_blank">Web Development</a></li>
-<li><a class="nav-link text-white ps-2" href="Img\AP GAMERS.png" target="_blank">AP Gamers</a></li>
+<li><a class="nav-link text-white ps-2" href="Files\Teaching\DW1 - Semáforo.pptx" target="_blank">Web Development</a></li>
 </ul>
 </div>
 </li>
@@ -45,7 +51,7 @@
 <button class="nav-link" type="button" data-bs-toggle="collapse" data-bs-target="#dataSubmenu">Data</button>
 <div class="collapse ps-4 no-transition" id="dataSubmenu">
 <ul class="list-unstyled">
-<li><a class="nav-link text-white ps-2" href="Files/Democracia en el Mundo - Macarena Videla.pbix" target="_blank">Democracy: A Brief Overview</a></li>
+<li><a class="nav-link text-white ps-2" href="Files\Data\Democracia en el Mundo - Macarena Videla.pbix" target="_blank">Democracy: A Brief Overview</a></li>
 </ul>
 </div>
 </li>
@@ -54,11 +60,11 @@
 <button class="nav-link" type="button" data-bs-toggle="collapse" data-bs-target="#certificationsSubmenu">Certifications</button>
 <div class="collapse ps-4 no-transition" id="certificationsSubmenu">
 <ul class="list-unstyled">
-<li><a class="nav-link text-white ps-2" href="Files\Data Analytics - Coder.png" target="_blank">Data Analytics</a></li>
-<li><a class="nav-link text-white ps-2" href="Files\STEM - UTN.png" target="_blank">STEM</a></li>
-<li><a class="nav-link text-white ps-2" href="Files\Data Governance.jpeg" target="_blank">Data Governance</a></li>
-<li><a class="nav-link text-white ps-2" href="Files\Communicative Leaders.jpeg" target="_blank">Communicative Leaders</a></li>
-<li><a class="nav-link text-white ps-2" href="Files\Future Leaders.pdf" target="_blank">Future Leaders</a></li>
+<li><a class="nav-link text-white ps-2" href="Files\Certifications\Data Analytics - Coder.png" target="_blank">Data Analytics</a></li>
+<li><a class="nav-link text-white ps-2" href="Files\Certifications\STEM - UTN.png" target="_blank">STEM</a></li>
+<li><a class="nav-link text-white ps-2" href="Files\Certifications\Data Governance.jpeg" target="_blank">Data Governance</a></li>
+<li><a class="nav-link text-white ps-2" href="Files\Certifications\Communicative Leaders.jpeg" target="_blank">Communicative Leaders</a></li>
+<li><a class="nav-link text-white ps-2" href="Files\Certifications\Future Leaders.pdf" target="_blank">Future Leaders</a></li>
 </ul>
 </div>
 </li>
@@ -73,35 +79,55 @@
 
 <main class="mt-5 pt-4">
 
-<section id="aboutSection" class="container d-flex align-items-center justify-content-center flex-column">
-  <img id="aboutPhoto" src="Img/Fondo.png" alt="Photo" class="img-fluid about-clickable" onclick="toggleAboutMe()" />
+<!-- About Me -->
 
-  <div id="aboutMeCard" class="card d-none about-clickable" data-aos="fade-up" onclick="toggleAboutMe()">
-    <div class="card-body">
-      <h5 class="card-title">About Me</h5>
-      <p class="card-text">I was born in Viedma (Patagonia)</p>
-    </div>
-  </div>
+<section id="aboutSection" class="container d-flex align-items-center justify-content-center flex-column">
+<img id="aboutPhoto" src="Img/Fondo.png" alt="Photo" class="img-fluid about-clickable" onclick="toggleAboutMe()" />
+
+<div id="aboutMeCard" class="card d-none about-clickable" data-aos="fade-up" onclick="toggleAboutMe()">
+<div class="card-body">
+<h5 class="card-title">About Me</h5>
+
+<p class="card-text">I grew up in Viedma (Patagonia), where I learned to see the world with curiosity and to dream big. I live in Buenos Aires now, but that root is still alive in me—it drives me to explore, to keep learning, and to seek ways to create meaningful impact.</p>
+
+<p>I've been dancing since I was very young—almost since I learned to walk—and that form of expression shaped the way I move through the world: with sensitivity, discipline, and passion.
+Later, I found new languages in education, technology, and innovation—powerful tools to turn ideas into action.</p>
+
+<p>I’m curious, multifaceted, and a strong believer in the power of self-directed learning.</p>
+
+I’m inspired by helping others discover what they’re capable of when they trust themselves—especially when they’re given space to explore, to make mistakes, and to try again.
+
+<p>I want to be part of TUMO because I share its vision: to empower new generations to develop real skills, creative thinking, and confidence in their own path.
+As a leader, I’m committed to creating a safe, challenging, and inspiring environment—where learning to code isn’t just about gaining a tool, but about opening a door to the future.</p>
+
+</div>
+</div>
 </section>
 
-
+<!-- Skills -->
 
 <section class="timeline">
 <div class="card-group" data-aos="fade-left">
 <div class="card">
-<img src="Img/Agile.jpeg" class="card-img-top" alt="Skills">
+<img src="Img/Agile.jpeg" class="card-img-top" alt="Agile">
 </div>
 <div class="card">
-<img src="Img/Skills.jpeg" class="card-img-top" alt="Skills">
+<img src="Img\Youth Speak.jpg" class="card-img-top" alt="Leadership">
+</div>
+<div class="card">
+<img src="Img/Skills.jpeg" class="card-img-top" alt="Programming">
 </div>
 </div>
 
+<!-- Experience -->
+
 <div class="card-group" data-aos="fade-up">
 <div class="card">
-<img src="Img/Tutora.png" class="card-img-top" alt="Tutora">
+<img src="Img\Tutora.png" class="card-img-top" alt="Tutora">
 <div class="card-body">
 <h5 class="card-title">Programming Instructor and Educational Tutor</h5>
-<p><strong>Talento Tech / Aprendé Programando – Government of the City of Buenos Aires</strong><br>April 2022 – Present </p>
+<p><Talento Tech / Aprendé Programando – Government of the City of Buenos Aires>
+<br>April 2022 – Present </p>
 <ul>
 <li>Planned and delivered programming classes to youth aged 15–18 (100 students per course)</li>
 <li>Implemented agile methodologies</li>
@@ -109,12 +135,13 @@
 </ul>
 </div>
 </div>
+
 <div class="card">
 <img src="Img/Jefa de Turno.jpeg" class="card-img-top" alt="Shift Manager">
 <div class="card-body">
 <h5 class="card-title">Shift Manager</h5>
-<p><strong>River Plate Vaccination Center – Government of the City of Buenos Aires</strong><br>
-December 2021 – March 2022</p>
+<p>River Plate Vaccination Center – Government of the City of Buenos Aires
+<br>December 2021 – March 2022</p>
 <ul>
 <li>Team leadership of 30 members, providing training and managing performance</li>
 <li>Optimization of logistical processes within the vaccination center</li>
@@ -122,20 +149,27 @@ December 2021 – March 2022</p>
 </ul>
 </div>
 </div>
-<div class="card">
-<img src="Img/AIESEC.jpg" class="card-img-top" alt="Volunteer Work">
+</div>
+
+<div class="cardv">
+<img src="Img\AIESEC.jpg" class="card-img-top" alt="Volunteer Work">
 <div class="card-body">
 <h5 class="card-title">Volunteer Work</h5>
 <ul>
-<li><strong>AIESEC:</strong> Coordinated incoming international projects and managed volunteer teams</li>
-<br>
-<li><strong>Creando Futuro Foundation:</strong> Planned and taught literary workshops and academic support for youth</li>
+<p>AIESEC: Coordinated incoming international projects and managed volunteer teams
+<br>2017-2019</p>
+<p>Creando Futuro Foundation: Planned and taught literary workshops and academic support for youth
+<br>2012-2014</p>
 </ul>
 </div>
 </div>
 </div>
+
+</div>
 </section>
 </main>
+
+<!-- Footer -->
 
 <footer class="footer">
 <p>Created with love by Macarena Videla</p>
@@ -148,7 +182,7 @@ December 2021 – March 2022</p>
 </footer>
 
 
-
+<!-- Close -->
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>

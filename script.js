@@ -42,24 +42,23 @@ window.addEventListener('resize', showCardsOnScroll);
 
 const aboutPhoto = document.getElementById("aboutPhoto");
 const aboutCard = document.getElementById("aboutMeCard");
-const allCards = document.querySelectorAll('.timeline .card');
+const allCards = document.querySelectorAll(".timeline .card, .timeline .cardv");
+const footer = document.querySelector("footer");
 
 function toggleAboutMe() {
-const isHidden = aboutCard.classList.contains("d-none");
+const showingAboutMe = !aboutCard.classList.contains("d-none");
 
-aboutCard.classList.toggle("d-none");
-aboutPhoto.classList.toggle("d-none");
-
-const footer = document.querySelector('.footer');
-if (footer) {
-footer.style.display = isHidden ? "none" : "";
+if (showingAboutMe) {
+aboutCard.classList.add("d-none");
+aboutPhoto.classList.remove("d-none");
+allCards.forEach(card => card.style.display = "");
+if (footer) footer.style.display = "";
+} else {
+aboutCard.classList.remove("d-none");
+aboutPhoto.classList.add("d-none");
+allCards.forEach(card => card.style.display = "none");
+if (footer) footer.style.display = "none";
 }
-
-allCards.forEach(card => {
-if (card !== aboutCard) {
-card.style.display = isHidden ? "none" : "";
-}
-});
 }
 
 if (aboutPhoto && aboutCard) {
