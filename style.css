@@ -18,20 +18,7 @@ margin: 0;
 .container-fluid {
 display: flex;
 justify-content: center;
-align-items: center;
-height: 60px;
-position: relative;
 }
-
-.navbar-title {
-position: absolute;
-left: 50%;
-transform: translateX(-50%);
-height: 100%;
-display: flex;
-align-items: center;
-}
-
 
 .navbar-toggler {
 position: absolute;
@@ -188,7 +175,6 @@ cursor: default;
 @media (max-width: 575.98px) {
 h1 { font-size: 1.6rem;}
 .card-body h5 { font-size: 1rem; }
-.navbar-title {transform: translate(-50%. -50%);}
 .nav-link { font-size: 0.8rem; }
 .card, .cardv {max-width: 100%;}
 }
