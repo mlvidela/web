@@ -40,7 +40,6 @@ font-size: 1.1rem;
   font-family: 'Whisper', cursive;
   font-size: 3rem;
   color: rgb(190, 175, 163);
-  width: 100%;
 }
 
 
@@ -186,7 +185,7 @@ cursor: default;
 @media (max-width: 575.98px) {
 h1 { font-size: 1.6rem;}
 .card-body h5 { font-size: 1rem; }
-.navbar-title { navbar-title: 30%; font-size: 2rem; }
+.navbar-title { font-size: 2rem; }
 .card, .cardv {max-width: 90%;}
 }
 
