@@ -72,16 +72,4 @@ AOS.refresh();
 showCardsOnScroll();
 });
 
-window.addEventListener("load", () => {
-  AOS.refresh();
-  showCardsOnScroll();
-
-  // FIX para centrar h1 correctamente al cargar en dispositivos móviles como Galaxy S21 FE
-  requestAnimationFrame(() => {
-    const h1 = document.querySelector("h1");
-    if (h1) {
-      h1.style.transform += " translateZ(0)";
-    }
-  });
-});
 
