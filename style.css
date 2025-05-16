@@ -36,10 +36,11 @@ margin: 0;
 font-size: 1.1rem;
 }
 
-.navbar h1 {
-position: absolute;
-left: 50%;
-transform: translateX(-50%);
+.navbar-title {
+  font-family: 'Whisper', cursive;
+  font-size: 3rem;
+  color: rgb(190, 175, 163);
+  width: 100%;
 }
 
 
@@ -185,8 +186,8 @@ cursor: default;
 @media (max-width: 575.98px) {
 h1 { font-size: 1.6rem;}
 .card-body h5 { font-size: 1rem; }
-.nav-link { font-size: 0.8rem; }
-.card, .cardv {max-width: 100%;}
+.navbar-title { navbar-title: 30%; font-size: 2rem; }
+.card, .cardv {max-width: 90%;}
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
