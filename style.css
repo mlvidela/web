@@ -30,7 +30,6 @@ transform: translateX(-50%);
 height: 100%;
 display: flex;
 align-items: center;
-transform: translate(-50%);
 }
 
 
@@ -189,6 +188,7 @@ cursor: default;
 @media (max-width: 575.98px) {
 h1 { font-size: 1.6rem;}
 .card-body h5 { font-size: 1rem; }
+.navbar-title {transform: translate(-50%. -50%);}
 .nav-link { font-size: 0.8rem; }
 .card, .cardv {max-width: 100%;}
 }
