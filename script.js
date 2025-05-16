@@ -66,3 +66,9 @@ aboutPhoto.addEventListener("click", toggleAboutMe);
 aboutCard.addEventListener("click", toggleAboutMe);
 }
 });
+
+window.addEventListener('load', () => {
+AOS.refresh();
+showCardsOnScroll();
+});
+
