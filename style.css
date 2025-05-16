@@ -7,11 +7,10 @@ margin: 0;
 padding: 0;
 }
 
-h1 {
+.navbar-title {
 font-family: 'Whisper', cursive;
 font-size: 3rem;
 color: rgb(190, 175, 163);
-text-align: center !important;
 margin: 0;
 }
 
