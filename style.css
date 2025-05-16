@@ -1,13 +1,13 @@
 body {
 background-color: black;
-font-family: 'Roboto', sans-serif;
+font-family: 'Roboto';
 font-size: 0.9rem;
 color: white;
 margin: 0;
 padding: 0;
 }
 
-h1, .offcanvas-title {
+h1 {
 text-align: center;
 font-family: 'Whisper', cursive;
 font-size: 3rem;
