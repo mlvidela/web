@@ -7,16 +7,20 @@ margin: 0;
 padding: 0;
 }
 
-.navbar-title {
+h1 {
 font-family: 'Whisper', cursive;
 font-size: 3rem;
 color: rgb(190, 175, 163);
+text-align: center;
 margin: 0;
 }
 
 .container-fluid {
 display: flex;
 justify-content: center;
+align-items: center;
+height: 60px;
+position: relative;
 }
 
 .navbar-toggler {
@@ -31,6 +35,13 @@ padding: 0;
 margin: 0;
 font-size: 1.1rem;
 }
+
+.navbar h1 {
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
+}
+
 
 button.navbar-toggler:focus,
 button.navbar-toggler:active,
