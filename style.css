@@ -92,7 +92,7 @@ flex-direction: column;
 }
 
 .card {
-  margin: auto;
+  margin: 3rem auto;
 }
 
 .cardv {
@@ -116,10 +116,9 @@ padding: 0;
 }
 
 .card img {
-max-width: 95%;
 height: 18rem;
 
-object-fit: cover;
+object-fit: contain;
 display: block;
 }
 
