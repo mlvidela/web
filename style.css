@@ -1,46 +1,42 @@
 body {
 background-color: black;
 font-family: 'Roboto';
+letter-spacing: 0.01rem;
 font-size: 0.9rem;
 color: white;
 margin: 0;
 padding: 0;
 }
 
-h1 {
-font-family: 'Whisper', cursive;
-font-size: 3rem;
-color: rgb(190, 175, 163);
-text-align: center;
-margin: 0;
-}
-
-.container-fluid {
-display: flex;
-justify-content: center;
-align-items: center;
-height: 60px;
-position: relative;
+.navbar {
+  position: relative;
+  height: 60px;
+  display: flex;
+  align-items: center;
 }
 
 .navbar-toggler {
-position: absolute;
-right: 1rem;
-top: 50%;
-transform: translateY(-50%);
-color: rgb(208, 201, 192);
-background: none;
-border: none;
-padding: 0;
-margin: 0;
-font-size: 1.1rem;
+  position: absolute;
+  right: 1rem;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  color: rgb(208, 201, 192);
+  font-size: 1.1rem;
 }
 
 .navbar-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   font-family: 'Whisper', cursive;
   font-size: 3rem;
   color: rgb(190, 175, 163);
+  padding: 0;
+  margin: 0;
 }
+
 
 
 button.navbar-toggler:focus,
@@ -119,7 +115,7 @@ margin: 1rem;
 
 .card-body h5 {
 color: #bba7db;
-font-size: 1.2rem;
+font-size: 1.5rem;
 }
 
 .card-body ul {
@@ -185,8 +181,8 @@ cursor: default;
 @media (max-width: 575.98px) {
 h1 { font-size: 1.6rem;}
 .card-body h5 { font-size: 1rem; }
-.navbar-title { font-size: 2rem; }
-.card, .cardv {max-width: 90%;}
+.navbar-title { font-size: 1.5rem; }
+.card, .cardv {max-width: 60%;}
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
