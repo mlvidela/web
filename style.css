@@ -8,17 +8,16 @@ body {
   padding: 0;
 }
 
-.navbar {
-  position: relative;
+h1 {
+  position: absolute;
   height: 60px;
   display: flex;
   align-items: center;
   background: rgba(30, 20, 30, 0.8);
   padding: 0 1rem;
-  z-index: 10;
 }
 
-.navbar-toggler {
+.icon {
   position: absolute;
   right: 1rem;
   background: none;
@@ -29,10 +28,6 @@ body {
   font-size: 1.1rem;
   cursor: pointer;
   transition: color 0.3s ease;
-}
-
-.navbar-toggler:hover {
-  color: #c084fc;
 }
 
 .navbar-title {
