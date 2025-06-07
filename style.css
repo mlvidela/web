@@ -46,7 +46,6 @@ body {
   padding: 0;
   margin: 0;
   user-select: none;
-  text-shadow: 0 0 5px #bba7db;
 }
 
 button.navbar-toggler:focus,
