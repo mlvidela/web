@@ -71,7 +71,7 @@ button.nav-link:focus,
   text-decoration: none;
 }
 
-.show {
+.show .button {
   margin: 2rem;
 }
 
