@@ -57,7 +57,7 @@ button.nav-link:focus,
   outline: none;
 }
 
-.nav-link, .nav-item {
+.menu {
   background: none;
   border: none;
   padding: 0.5rem 0 0.6rem 0.5rem;
