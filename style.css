@@ -13,10 +13,13 @@ body {
   height: 60px;
   display: flex;
   align-items: center;
-  box-shadow: 0 2px 5px rgba(187, 167, 219, 0.3);
   background: rgba(30, 20, 30, 0.8);
   padding: 0 1rem;
   z-index: 10;
+}
+
+.portfolio {
+  list-style: none;
 }
 
 .navbar-toggler {
