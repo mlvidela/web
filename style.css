@@ -71,7 +71,7 @@ button.nav-link:focus,
   text-decoration: none;
 }
 
-.show .button {
+.nav-list .nav-item{
   margin: 2rem;
 }
 
