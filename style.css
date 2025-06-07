@@ -55,10 +55,9 @@ button.nav-link:focus,
   outline: none;
 }
 
-.nav-link {
+.nav-item {
   background: none;
   border: none;
-  margin: none;
   padding: 0.5rem 0 0.6rem 0.5rem;
   text-align: left;
   width: 100%;
