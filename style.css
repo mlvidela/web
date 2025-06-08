@@ -79,6 +79,10 @@ button.nav-link:focus,
   text-decoration: none;
 }
 
+.collapse ul li a:hover {
+  background-color: #c084fc;
+}
+
 main {
   margin-top: 5%;
   text-align: center;
