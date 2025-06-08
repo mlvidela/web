@@ -72,9 +72,26 @@ aboutPhoto.addEventListener("click", toggleAboutMe);
 aboutCard.addEventListener("click", toggleAboutMe);
 }
 
+// Experience
+
+function toggleSection(id) {
+    document.getElementById(id).classList.toggle('d-none');
+} 
+
 // Refrescar AOS y mostrar cards visibles tras carga completa
 window.addEventListener('load', () => {
 AOS.refresh();
 showCardsOnScroll();
 });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    const cards = document.querySelectorAll('.experience .card');
+
+    cards.forEach(card => {
+        card.querySelector('img').addEventListener('click', event => {
+            const details = card.querySelector('div');
+            details.classList.toggle('d-none');
+        });
+    });
 });

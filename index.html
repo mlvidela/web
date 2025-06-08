@@ -8,8 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Whisper&display=swap" rel="stylesheet" />
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" rel="stylesheet" />
+
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="style.css" />
@@ -21,8 +21,8 @@
 
 <header>
 
-<nav class="navbar navbar-dark bg-dark fixed-top">
-<h1>Macarena Videla</h1>
+    <nav class="navbar navbar-dark fixed-top">
+    <h1 class="navbar-title">Macarena Videla</h1>
 
 <section id="icon">    
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
@@ -45,7 +45,7 @@
             <ul class="list-unstyled">
             <li><a class="nav-link text-white ps-2" href="https://editor.p5js.org/mlvidela/full/mnnY-el2d" target="_blank">Game - The Perfect Mate</a></li>
             <li><a class="nav-link text-white ps-2" href="Files/Teaching/Workshop - Women in Tech.pptx" target="_blank">Workshop - Women in Tech</a></li>
-            <li><a class="nav-link text-white ps-2" href="Files/Teaching/DW1 - Semáforo.pptx" target="_blank">Semáforo</a></li>
+            <li><a class="nav-link text-white ps-2" href="Files/Teaching/DW1 - Semáforo.pptx" target="_blank">Game - Traffic Light</a></li>
             </ul>
         </div>
 
@@ -82,27 +82,27 @@
 
 </header>
 
-<main class="mt-5 pt-4">
+<main>
 
-<section id="aboutme" class="container d-flex align-items-center justify-content-center flex-column">
+<section class="aboutme" class="container d-flex align-items-center justify-content-center flex-column">
     <img id="aboutPhoto" src="Img/Fondo.png" alt="Photo" class="img-fluid about-clickable" onclick="toggleAboutMe()">
-    <div id="aboutMeCard" class="card d-none about-clickable" onclick="toggleAboutMe()">
+    
+<div id="aboutMeCard" class="card d-none about-clickable" onclick="toggleAboutMe()">
 
     <div class="card-body">
     <h5 class="card-title">About Me</h5>
-    <p>I grew up in Viedma (Patagonia), where I learned to see the world with curiosity and to dream big. I live in Buenos Aires now, but that root is still alive in me—it drives me to explore, to keep learning, and to seek ways to create meaningful impact.</p>
-    <p>I've been dancing since I was very young—almost since I learned to walk—and that form of expression shaped the way I move through the world: with sensitivity, discipline, and passion.
-    Later, I found new languages in education, technology, and innovation—powerful tools to turn ideas into action.</p>
-    <p>I’m curious, multifaceted, and a strong believer in the power of self-directed learning.</p>
-    <p>I’m inspired by helping others discover what they’re capable of when they trust themselves—especially when they’re given space to explore, to make mistakes, and to try again.</p>
+    <br>I grew up in Viedma (Patagonia), where I learned to see the world with curiosity and to dream big. I live in Buenos Aires now, but that root is still alive in me—it drives me to explore, to keep learning, and to seek ways to create meaningful impact.
+    <br>I've been dancing since I was very young—almost since I learned to walk—and that form of expression shaped the way I move through the world: with sensitivity, discipline, and passion.
+    Later, I found new languages in education, technology, and innovation—powerful tools to turn ideas into action.
+    <br>I’m curious, multifaceted, and a strong believer in the power of self-directed learning.
+    <br>I’m inspired by helping others discover what they’re capable of when they trust themselves—especially when they’re given space to explore, to make mistakes, and to try again.</p>
     </div>
 
-    </div>
+</div>
 </section>
 
 <section id="timeline" data-aos="fade-up">
 
-    <section class="card">
     <div class="card-group">
         <div class="card">
         <img src="Img/Agile.jpeg" class="card-img-top" alt="Agile" />
@@ -117,47 +117,51 @@
         </div>
     </div>
 
-    <div class="card-group">
-        <div class="card">
-        <img src="Img/Tutora.png" class="card-img-top" alt="Tutora" />
-        <div class="card-body">
+</section>
 
-        <h5 class="card-title">Programming Instructor and Educational Tutor</h5>
-        <p><strong>Talento Tech / Aprendé Programando <br> - Government of the City of Buenos Aires - <br> April 2022 – Present</strong></p>
+<!-- Experience -->
 
+<section class="experience">
+
+<div class="card-group">
+    
+    <div class="card">
+        <img src="Img/Tutora.png" alt="Programming Tutor" class="img-fluid about-clickable" style="cursor: pointer;" onclick="toggleSection('experience')">
+        <div id="programmingTutor" class="d-none">
+        <h5 class="card-title mt-2">Programming Instructor and Educational Tutor</h5>
         <ul>
-        <li>- Planned and delivered programming classes to youth aged 15–18 (100 students per course) - </li>
+        <li>- Planned and delivered programming classes to youth aged 15–18 (100 students per course) -</li>
         <li>- Implemented agile methodologies -</li>
         <li>- Coordinated "Digital Women", an initiative for female inclusion in IT -</li>
         </ul>
+        </div>
     </div>
-    </div>
-    </section>
-
+    
     <div class="card">
-        <img src="Img/Jefa de Turno.jpeg" class="card-img-top" alt="Shift Manager" />
-    <div class="card-body">
-        <h5 class="card-title">Shift Manager</h5>
-        <p><strong>River Plate Vaccination Center <br> - Government of the City of Buenos Aires - <br> December 2021 – March 2022</strong></p>
+        <img src="Img/Jefa de Turno.jpeg" alt="Shift Manager" class="img-fluid about-clickable" style="cursor: pointer;" onclick="toggleSection('experience')">
+        <div id="shiftManager" class="d-none">
+        <h5 class="card-title mt-2">Shift Manager</h5>
         <ul>
         <li>- Team leadership of 30 members, providing training and managing performance -</li>
         <li>- Optimization of logistical processes within the vaccination center -</li>
         <li>- Administrative coordination: citizen assistance, document control, and conflict resolution -</li>
         </ul>
-    </div>
+        </div>
+        </div>
+
     </div>
 
-
-    <section class="cardv">
-    <img src="Img/AIESEC.jpg" class="card-img-top" alt="Volunteer Work" />
-    
-    <div class="card-body">
+    <div class="card">
+        <img src="Img/AIESEC.jpg" alt="Volunteer Work" class="img-fluid about-clickable" style="cursor: pointer;" onclick="toggleSection('experience')">
+        <div class="card-body">
         <h5 class="card-title">Volunteer Work</h5>
         <p><strong>AIESEC</strong> <br>- Coordinated incoming international projects and managed volunteer teams -<br> <strong>2017-2019</strong></p>
         <p><strong>Creando Futuro Foundation</strong> <br>- Planned and taught literary workshops and academic support for youth - <br><strong>2012-2014</strong></p>
+        </div>
+        </div>
     </div>
-    </section>
 
+</div>
 </section>
 
 </main>
@@ -175,7 +179,6 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script src="mate.js"></script>
 <script src="script.js"></script>
 
 </body>
