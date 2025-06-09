@@ -77,7 +77,7 @@ button.nav-link:focus,
   text-decoration: none;
 }
 
-.collapse ul li a:hover {
+ul li a:hover {
   background-color: #c084fc;
 }
 
