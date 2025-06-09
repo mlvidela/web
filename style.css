@@ -77,7 +77,7 @@ button.nav-link:focus,
   text-decoration: none;
 }
 
-ul li a:hover {
+.list-unstyled li a:hover {
   background-color: #c084fc;
 }
 
