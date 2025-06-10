@@ -85,10 +85,11 @@
 
 <main>
 
-<section class="aboutme" class="container d-flex align-items-center justify-content-center flex-column">
-    <img id="aboutPhoto" src="Img/Fondo.png" alt="Photo" class="img-fluid about-clickable" onclick="toggleAboutMe()">
-    
-<div id="aboutMeCard" class="card d-none about-clickable" onclick="toggleAboutMe()">
+<section id="aboutme" class="container d-flex align-items-center justify-content-center flex-column">
+<img class="aboutme" src="Img/Fondo.png" alt="Photo" class="img-fluid about-clickable" onclick="toggleAboutMe()">
+   
+<!--
+<div class="aboutme" class="card d-none about-clickable" onclick="toggleAboutMe()">
 
     <div class="card-body">
     <h5 class="card-title">About Me</h5>
@@ -100,79 +101,80 @@
     </div>
 
 </div>
+-->
+<section id="skills">
+    <div id="carouselindicators" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselindicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselindicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselindicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <h5>Agile</h5>
+        <img src="Img/Agile.jpeg" class="d-block w-100" alt="Agile">
+        
+      </div>
+      <div class="carousel-item">
+        <h5>Leadership</h5>
+        <img src="Img/Leadership.jpg" class="d-block w-100" alt="Leadership">
+        
+      </div>
+      <div class="carousel-item">
+        <h5>Programming</h5>
+        <img src="Img/Programming.jpeg" class="d-block w-100" alt="programming">
+        
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselindicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselindicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
 </section>
-
-<div class="card-group">
-        <div class="card">
-            <h5 class="card-title">Agile</h5> 
-            <img src="Img/Agile.jpeg" class="card-img-top" alt="Agile" />
-        </div>
-
-        <div class="card">
-            <h5 class="card-title">Leadership</h5>             
-            <img src="Img/Youth Speak.jpg" class="card-img-top" alt="Leadership" />
-        </div>
-
-        <div class="card">
-            <h5 class="card-title">Programming</h5> 
-            <img src="Img/Skills.jpeg" class="card-img-top" alt="Programming" />
-        </div>
-</div>
 
 <!-- Experience -->
 
-<div class="card-group">
-    
-    <div class="card">
-        <h5 class="card-title">Programming Tutor</h5>          
-        <img src="Img/Tutora.png" alt="Programming Tutor" class="img-fluid about-clickable" style="cursor: pointer;" onclick="toggleSection('experience')">
+<section id="experience">
+    <div id="carouselindicators2" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselindicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselindicators2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselindicators2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <h5>Programming Tutor</h5>
+        <img src="Img/Programming Tutor.png" class="d-block w-100" alt="Programming Tutor">
         
-        <div id="experienceCard" class="d-none">
-            <ul>
-            <li><i class="bi bi-arrow-right"></i> Planned and delivered programming classes to youth aged 15–18 (100 students per course).</li>
-            <li><i class="bi bi-arrow-right"></i> Implemented agile methodologies.</li>
-            <li><i class="bi bi-arrow-right"></i> Coordinated "Digital Women", an initiative for female inclusion in IT.</li>
-            </ul>
-        </div>
-    </div>
-    
-    <div class="card">
-        <h5 class="card-title">Shift Manager</h5>        
-        <img src="Img/Jefa de Turno.jpeg" alt="Shift Manager" class="img-fluid about-clickable" style="cursor: pointer;" onclick="toggleSection('experience')">
-
-        <div id="experienceCard" class="d-none"> 
-            <ul>
-            <h5>Gob. de la Ciudad de Buenos Aires</h5>
-            <li><i class="bi bi-arrow-right"></i> Team leadership of 30 members, providing training and managing performance.</li>
-            <li><i class="bi bi-arrow-right"></i> Optimization of logistical processes within the vaccination center.</li>
-            <li><i class="bi bi-arrow-right"></i> Administrative coordination: citizen assistance, document control, and conflict resolution.</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="card">
-
+      </div>
+      <div class="carousel-item">
+        <h5>Shift Manager</h5>
+        <img src="Img/Manager.jpeg" class="d-block w-100" alt="Shift Manager">
         
-        <h5 class="card-title">Volunteer Work</h5>        
-        <img src="Img/AIESEC.jpg" alt="Volunteer Work" class="img-fluid about-clickable" style="cursor: pointer;" onclick="toggleSection('experience')">
-
-        <div id="experienceCard" class="d-none">
-
-        <ul>
-        <li>AIESEC
-        <p>Coordinated incoming international projects and managed volunteer teams
-        <br> 2017-2019</p></li>
-
-        <li>Creando Futuro Foundation 
-        <p>Planned and taught literary workshops and academic support for youth
-        <br>2012-2014</p></li>
-        </ul>
-
-        </div>
+      </div>
+      <div class="carousel-item">
+        <h5>Volunteer</h5>
+        <img src="Img/AIESEC.jpg" class="d-block w-100" alt="Volunteer">
+        
+      </div>
     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselindicators2" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselindicators2" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 
-</div>
-
+</section>
 
 </main>
 
