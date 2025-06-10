@@ -1,9 +1,7 @@
 body {
-  background-color: white;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto';
   letter-spacing: 0.01rem;
   font-size: 0.9rem;
-  color: white;
   margin: 0;
   padding: 0;
 }
@@ -60,25 +58,9 @@ button.nav-link:focus,
   margin: 2rem;
 }
 
-.portfolio li {
-  list-style: none;
-}
-
-.collapse .nav-link {
-  transition: none;
-}
-
-.collapse, .collapsing {
-  transition: none;
-}
-
 .nav-link:hover {
   color: #c084fc;
   text-decoration: none;
-}
-
-.list-unstyled li a:hover {
-  background-color: #c084fc;
 }
 
 main {
@@ -89,9 +71,11 @@ main {
   flex-wrap: wrap;
 }
 
+.d-none {
+  display: none;
+}
+
 .card {
-  background-color: rgb(40, 34, 45);
-  color: white;
   font-size: 0.9rem;
   max-width: 30%;
   display: flex;
@@ -99,15 +83,13 @@ main {
   align-items: center;
   flex-direction: column;
   border-radius: 8px;
+  border-color: white;
   margin: 2rem auto;
-}
-
-.card-body {
-  margin: 1rem;
 }
 
 .card-body h5, .card-title {
   color: #bba7db;
+  font-family: 'roboto';
   font-size: 1rem;
   margin: 1rem;
   user-select: none;
@@ -118,35 +100,25 @@ ul {
   padding: 0;
 }
 
-ul li {
+.card-group img {
+  width: 20rem;
+  height: 12rem;
+} 
+
+#experienceCard {
+  background-color: black;
   color: white;
+  padding: 2rem;
 }
 
-.card.invisible {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: all 0.6s ease-in-out;
+#experienceCard h5 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  color: #bba7db;
 }
 
-.card.visible {
-  opacity: 1;
-  transform: translateY(0);
-  transition: all 0.6s ease-in-out;
-}
-
-.about-clickable {
-  max-width: 100%;
-  cursor: pointer;
-}
-
-.offcanvas-header {
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.d-none {
-  display: none;
+#experienceCard li {
+  margin: 1rem auto;
 }
 
 .footer {

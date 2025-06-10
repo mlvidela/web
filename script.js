@@ -107,8 +107,8 @@ function toggleSection(id) {
 document.getElementById(id).classList.toggle('d-none');
 }
 
-const experienceCards = document.querySelectorAll('.experience .card');
-experienceCards.forEach(card => {
+const experienceCard = document.querySelectorAll('.card');
+experienceCard.forEach(card => {
 const img = card.querySelector('img');
 const details = card.querySelector('div');
 if (img && details) {
