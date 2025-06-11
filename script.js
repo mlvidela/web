@@ -9,50 +9,65 @@ showCardsOnScroll(); // muestra las cards visibles si hay alguna que no se mostr
 });
 });
 
-// -------- Collapse --------
+// -------- Menu --------
 const toggles = document.querySelectorAll('[data-bs-toggle="collapse"]');
 
 toggles.forEach(toggle => {
-const targetId = toggle.getAttribute("data-bs-target");
-const targetElement = document.querySelector(targetId);
+  const targetId = toggle.getAttribute("data-bs-target");
+  const targetElement = document.querySelector(targetId);
 
-toggle.addEventListener("mouseenter", () => {
+  let closeTimeout;
 
-toggles.forEach(otherToggle => {
-const otherId = otherToggle.getAttribute("data-bs-target");
-const otherElement = document.querySelector(otherId);
+  toggle.addEventListener("mouseenter", () => {
+    toggles.forEach(otherToggle => {
+      const otherId = otherToggle.getAttribute("data-bs-target");
+      const otherElement = document.querySelector(otherId);
 
-if (otherElement !== targetElement && otherElement.classList.contains("show")) {
-const collapseInstance = bootstrap.Collapse.getInstance(otherElement);
-if (collapseInstance) {
-  collapseInstance.hide();
+      if (otherElement !== targetElement && otherElement.classList.contains("show")) {
+        const collapseInstance = bootstrap.Collapse.getInstance(otherElement);
+        if (collapseInstance) {
+          collapseInstance.hide();
+        } else {
+          new bootstrap.Collapse(otherElement, { toggle: false }).hide();
+        }
+      }
+    });
+
+    const collapseInstance = bootstrap.Collapse.getInstance(targetElement) || new bootstrap.Collapse(targetElement, { toggle: false });
+    collapseInstance.show();
+
+    clearTimeout(closeTimeout);
+  });
+
+  const closeCollapseIfNeeded = () => {
+    closeTimeout = setTimeout(() => {
+      if (!toggle.matches(':hover') && !targetElement.matches(':hover')) {
+        const collapseInstance = bootstrap.Collapse.getInstance(targetElement);
+        if (collapseInstance && targetElement.classList.contains("show")) {
+          collapseInstance.hide();
+        }
+      }
+    }, 300);
+  };
+
+  toggle.addEventListener("mouseleave", closeCollapseIfNeeded);
+  targetElement.addEventListener("mouseleave", closeCollapseIfNeeded);
+});
+
+
+
+// -------- About Me --------
+function toggleAboutMe() {
+const img = document.querySelector('.about-clickable');
+const card = document.getElementById('aboutMeCard');
+
+if (card.classList.contains('d-none')) {
+img.style.display = 'none';
+card.classList.remove('d-none');
 } else {
-  new bootstrap.Collapse(otherElement, { toggle: false }).hide();
+card.classList.add('d-none');
+img.style.display = 'block';
 }
 }
-});
 
-if (!targetElement.classList.contains("show")) {
-const collapseInstance = bootstrap.Collapse.getInstance(targetElement);
-if (collapseInstance) {
-collapseInstance.show();
-} else {
-new bootstrap.Collapse(targetElement, { toggle: false }).show();
-}
-}
-});
 
-const closeCollapseIfNeeded = () => {
-setTimeout(() => {
-if (!toggle.matches(':hover') && !targetElement.matches(':hover')) {
-const collapseInstance = bootstrap.Collapse.getInstance(targetElement);
-if (collapseInstance && targetElement.classList.contains("show")) {
-  collapseInstance.hide();
-}
-}
-}, 200);
-};
-
-toggle.addEventListener("mouseleave", closeCollapseIfNeeded);
-targetElement.addEventListener("mouseleave", closeCollapseIfNeeded);
-});
