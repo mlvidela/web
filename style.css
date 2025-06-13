@@ -32,17 +32,14 @@ body {
   font-size: 1.1rem;
 }
 
-button.navbar-toggler:focus,
-button.navbar-toggler:active,
-button.nav-link:focus,
-.btn-close:focus {
-  box-shadow: none;
-  outline: none;
+.portfolio {
+  margin: 0;
+  padding: 0;
 }
 
 .nav-item {
   background: none;
-  border: none;
+  border: 1px dashed red; /*Quitar*/
   text-align: left;
   width: 100%;
   color: white;
@@ -54,16 +51,25 @@ button.nav-link:focus,
   margin: 0.3rem 1rem;
 }
 
-.nav-list .nav-item{
-  margin: 2rem;
+.collapsing {
+  transition: none;
 }
 
-.collapse, .collapsing {
-  transition-duration: 1s !important;
+button.navbar-toggler:focus,
+button.navbar-toggler:active,
+button.nav-link:focus,
+.btn-close:focus {
+  box-shadow: none;
+  outline: none;
 }
 
-.nav-link:hover {
+button.nav-link:hover{ 
   color: #c084fc;
+  text-decoration: none;
+}
+
+a.nav-link:hover{ 
+  background-color: #c084fc;
   text-decoration: none;
 }
 
@@ -89,9 +95,9 @@ ul {
   padding: 0;
 }
 
-#skills > p, #experience > p {  
+#skills > h2, #experience > h2 {  
   background-color: #bba7db;
-  filter: brightness(0.6);
+
   color: #222024;
   font-size: 1.5rem;
   

@@ -1,73 +1,64 @@
-// -------- Page --------
+// -------- PAGE --------
 document.addEventListener("DOMContentLoaded", function () {
-// Inicializa AOS (Animate On Scroll) con duración y que solo se active una vez
-AOS.init({ duration: 1000, once: true });
+  // Inicializa animaciones de scroll
+  AOS.init({ duration: 1000, once: true });
 
-window.addEventListener('load', () => {
-AOS.refresh();       // refresca animaciones AOS
-showCardsOnScroll(); // muestra las cards visibles si hay alguna que no se mostró aún
-});
+  window.addEventListener('load', () => {
+    AOS.refresh();       // Refresca AOS por si hubo elementos cargados luego
+    showCardsOnScroll(); // Muestra las cards que estén visibles
+  });
 });
 
-// -------- Menu --------
+// -------- MENU (hover para mostrar submenú) --------
 const toggles = document.querySelectorAll('[data-bs-toggle="collapse"]');
 
 toggles.forEach(toggle => {
   const targetId = toggle.getAttribute("data-bs-target");
   const targetElement = document.querySelector(targetId);
-
   let closeTimeout;
 
+  // Mostrar submenú al pasar el mouse
   toggle.addEventListener("mouseenter", () => {
+    // Cierra otros submenús abiertos
     toggles.forEach(otherToggle => {
       const otherId = otherToggle.getAttribute("data-bs-target");
       const otherElement = document.querySelector(otherId);
-
       if (otherElement !== targetElement && otherElement.classList.contains("show")) {
-        const collapseInstance = bootstrap.Collapse.getInstance(otherElement);
-        if (collapseInstance) {
-          collapseInstance.hide();
-        } else {
-          new bootstrap.Collapse(otherElement, { toggle: false }).hide();
-        }
+        const instance = bootstrap.Collapse.getInstance(otherElement) || new bootstrap.Collapse(otherElement, { toggle: false });
+        instance.hide();
       }
     });
 
+    // Muestra el submenú actual
     const collapseInstance = bootstrap.Collapse.getInstance(targetElement) || new bootstrap.Collapse(targetElement, { toggle: false });
     collapseInstance.show();
 
-    clearTimeout(closeTimeout);
+    clearTimeout(closeTimeout); // Por si saliste y volviste rápido
   });
 
-  const closeCollapseIfNeeded = () => {
-    closeTimeout = setTimeout(() => {
-      if (!toggle.matches(':hover') && !targetElement.matches(':hover')) {
-        const collapseInstance = bootstrap.Collapse.getInstance(targetElement);
-        if (collapseInstance && targetElement.classList.contains("show")) {
-          collapseInstance.hide();
-        }
-      }
-    }, 300);
-  };
-
-  toggle.addEventListener("mouseleave", closeCollapseIfNeeded);
-  targetElement.addEventListener("mouseleave", closeCollapseIfNeeded);
+  // Oculta si el mouse sale
+  toggle.addEventListener("mouseleave", () => closeCollapseIfNeeded(toggle, targetElement));
+  targetElement.addEventListener("mouseleave", () => closeCollapseIfNeeded(toggle, targetElement));
 });
 
+// Función auxiliar para ocultar submenús con un pequeño delay
+function closeCollapseIfNeeded(toggle, targetElement) {
+  setTimeout(() => {
+    if (!toggle.matches(':hover') && !targetElement.matches(':hover')) {
+      const collapseInstance = bootstrap.Collapse.getInstance(targetElement);
+      if (collapseInstance && targetElement.classList.contains("show")) {
+        collapseInstance.hide();
+      }
+    }
+  }, 300);
+}
 
-
-// -------- About Me --------
+// -------- ABOUT ME (imagen y tarjeta) --------
 function toggleAboutMe() {
-const img = document.querySelector('.about-clickable');
-const card = document.getElementById('aboutMeCard');
+  const img = document.querySelector('.about-clickable');
+  const card = document.getElementById('aboutMeCard');
 
-if (card.classList.contains('d-none')) {
-img.style.display = 'none';
-card.classList.remove('d-none');
-} else {
-card.classList.add('d-none');
-img.style.display = 'block';
+  const showingCard = !card.classList.contains('d-none');
+  card.classList.toggle('d-none', showingCard);
+  img.style.display = showingCard ? 'block' : 'none';
 }
-}
-
-
