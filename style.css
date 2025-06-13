@@ -39,7 +39,6 @@ body {
 
 .nav-item {
   background: none;
-  border: 1px dashed red; /*Quitar*/
   text-align: left;
   width: 100%;
   color: white;
@@ -69,7 +68,7 @@ button.nav-link:hover{
 }
 
 a.nav-link:hover{ 
-  background-color: #c084fc;
+  color: #c084fc;
   text-decoration: none;
 }
 
