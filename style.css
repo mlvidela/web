@@ -184,31 +184,15 @@ h5 {
 
 /* Responsive */
 
-@media (max-width: 850px) {
+@media (max-width: 800px) {
 
   #skills, #experience {
     margin: 2rem auto;
-    width: 90vw;
-    height: auto;
-    display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  #skills img, #experience img {
-    width: 100%;
-    height: auto;
-  }
-
-  .carousel-inner,
-  .carousel-item,
-  .carousel-item img {
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  h5 {
+  h3 {
     font-size: 0.9rem;
     padding: 0.4rem;
   }
