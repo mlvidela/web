@@ -18,7 +18,8 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: "Fleur de Leah";
-  font-size: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
   color: rgb(190, 175, 163);
 }
 
@@ -184,6 +185,7 @@ h5 {
 /* Responsive */
 
 @media (max-width: 768px) {
+
   #skills, #experience {
     margin: 2rem auto;
     width: 90vw;
@@ -201,7 +203,7 @@ h5 {
   .carousel-inner,
   .carousel-item,
   .carousel-item img {
-    width: 100% !important;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
   }
