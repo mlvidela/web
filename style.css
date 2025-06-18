@@ -18,7 +18,7 @@ body {font-family: 'Roboto';
   transform: translate(-50%, -50%);
   font-family: "Fleur de Leah";
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   color: rgb(190, 175, 163);
 }
 
@@ -124,7 +124,7 @@ ul li {
 #skills > h2, #experience > h2 {  
   background-color: #bba7db;
   color: #222024;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 h5 {  
@@ -166,8 +166,8 @@ h5 {
 }
 
 .footer img {
-  width: 38px;
-  height: 38px;
+  width: 35px;
+  height: 35px;
   object-fit: contain;
   filter: brightness(0.6);
   cursor: default;
