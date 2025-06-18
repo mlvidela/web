@@ -1,5 +1,4 @@
-body {
-  font-family: 'Roboto';
+body {font-family: 'Roboto';
   letter-spacing: 0.01rem;
   font-size: 0.9rem;
   margin: 0;
@@ -85,9 +84,17 @@ a.nav-link:hover{
 main {
   display: flex;
   flex-direction: column;
+
   align-items: center;
   justify-content: center;
   text-align: center;
+
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+  margin: 0 auto;
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
 ul {
@@ -100,39 +107,24 @@ ul li {
   transition: 0;
 }
 
-#skills > h2, #experience > h2 {  
-  background-color: #bba7db;
-
-  color: #222024;
-  font-size: 1.5rem;
-  
-  text-align: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  margin: 0;
-  z-index: 2;
-}
-
-#carouselindicators, #carouselindicators2 {
-  padding-top: 2rem;
-}
-
 #skills, #experience {
+  position: relative;
   background-color: black;
   color: white;
-
   width: 22rem;
-  height: 22rem;
   margin: 2rem auto;
-  position: relative;
 }
 
 #skills img, #experience img {
   width: 22rem;
   height: 22rem;
   object-fit: cover;
+}
+
+#skills > h2, #experience > h2 {  
+  background-color: #bba7db;
+  color: #222024;
+  font-size: 1.5rem;
 }
 
 h5 {  
@@ -146,7 +138,6 @@ h5 {
   bottom: 0;
   padding: 0.5rem;
 }
-
 
 .footer {
   background-color: black;
@@ -180,20 +171,4 @@ h5 {
   object-fit: contain;
   filter: brightness(0.6);
   cursor: default;
-}
-
-/* Responsive */
-
-@media (max-width: 800px) {
-
-  #skills, #experience {
-    margin: 2rem auto;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  h3 {
-    font-size: 0.9rem;
-    padding: 0.4rem;
-  }
 }
