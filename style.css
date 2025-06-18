@@ -111,13 +111,13 @@ ul li {
   position: relative;
   background-color: black;
   color: white;
-  width: 22rem;
+  width: 18rem;
   margin: 2rem auto;
 }
 
 #skills img, #experience img {
-  width: 22rem;
-  height: 22rem;
+  width: 18rem;
+  height: 18rem;
   object-fit: cover;
 }
 
@@ -166,8 +166,8 @@ h5 {
 }
 
 .footer img {
-  width: 40px;
-  height: 40px;
+  width: 38px;
+  height: 38px;
   object-fit: contain;
   filter: brightness(0.6);
   cursor: default;
