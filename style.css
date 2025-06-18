@@ -81,6 +81,10 @@ a.nav-link:hover{
   margin-top: 5rem;
 }
 
+#aboutMeCard h3 {
+  font-size: 1rem;
+}
+
 main {
   display: flex;
   flex-direction: column;
