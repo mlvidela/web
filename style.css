@@ -1,14 +1,25 @@
-body {font-family: 'Roboto';
-  letter-spacing: 0.01rem;
+body {
+  font-family: 'Roboto';
   font-size: 0.9rem;
   margin: 0;
   padding: 0;
+  background-color: #000;
+  color: #d0c9c0;
+}
+
+h2, h3, h5 {
+  font-size: 1rem;
+}
+
+p {
+  font-family: "Playfair Display";
 }
 
 .navbar {
   position: fixed;
   background-color: #222024;
   padding: 1.5rem;
+  width: 100%;
 }
 
 .navbar-title {
@@ -16,7 +27,7 @@ body {font-family: 'Roboto';
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: "Fleur de Leah";
+  font-family: "Playfair Display";
   text-align: center;
   font-size: 1.7rem;
   color: rgb(190, 175, 163);
@@ -29,12 +40,7 @@ body {font-family: 'Roboto';
   background: none;
   border: none;
   color: rgb(208, 201, 192);
-  font-size: 1.1rem;
-}
-
-.portfolio {
-  margin: 0;
-  padding: 0;
+  font-size: 1.3rem;
 }
 
 .nav-item {
@@ -42,16 +48,11 @@ body {font-family: 'Roboto';
   text-align: left;
   width: 100%;
   color: white;
-  font-size: 0.85rem;
   cursor: pointer;
 }
 
-.nav-link {
-  margin: 0.3rem 1rem;
-}
-
-.collapsing {
-  transition: none;
+.btn-close {
+  filter: brightness(0) saturate(100%) invert(89%) sepia(15%) saturate(181%) hue-rotate(342deg) brightness(87%) contrast(84%);
 }
 
 button.navbar-toggler:focus,
@@ -62,12 +63,8 @@ button.nav-link:focus,
   outline: none;
 }
 
-button.nav-link:hover{ 
-  color: #c084fc;
-  text-decoration: none;
-}
-
-a.nav-link:hover{ 
+button.nav-link:hover,
+a.nav-link:hover {
   color: #c084fc;
   text-decoration: none;
 }
@@ -81,18 +78,12 @@ a.nav-link:hover{
   margin-top: 5rem;
 }
 
-#aboutMeCard h3 {
-  font-size: 1rem;
-}
-
 main {
   display: flex;
   flex-direction: column;
-
   align-items: center;
   justify-content: center;
   text-align: center;
-
   width: 100%;
   max-width: 100vw;
   overflow-x: hidden;
@@ -111,7 +102,8 @@ ul li {
   transition: 0;
 }
 
-#skills, #experience {
+#skills,
+#experience {
   position: relative;
   background-color: black;
   color: white;
@@ -119,34 +111,34 @@ ul li {
   margin: 2rem auto;
 }
 
-#skills img, #experience img {
+#skills img,
+#experience img {
   width: 18rem;
   height: 18rem;
   object-fit: cover;
 }
 
-#skills > h2, #experience > h2 {  
+#skills > h2,
+#experience > h2 {
   background-color: #bba7db;
   color: #222024;
-  font-size: 1rem;
+  margin-top: 0;
 }
 
-h5 {  
-  background: rgba(0, 0, 0, 0.6);
-  font-size: 1rem;
-  color: #bba7db;
+h5 {
+  background: rgba(187, 167, 219, 0.7);
+  color: black;
   text-align: center;
   position: absolute;
   width: 100%;
   margin: 0;
   bottom: 0;
-  padding: 0.5rem;
+  padding: 0.1rem;
 }
 
 .footer {
   background-color: black;
   border: 0.1rem solid #bba7db;
-  margin: 2rem 1rem 1rem 1rem;
   padding: 1rem 0;
   display: flex;
   flex-direction: column;
@@ -175,4 +167,19 @@ h5 {
   object-fit: contain;
   filter: brightness(0.6);
   cursor: default;
+}
+
+/* Light mode */
+body.light-mode {
+  background-color: white;
+  color: #222024;
+}
+
+body.light-mode .card {
+  background-color: white;
+}
+
+body.light-mode #skills h2,
+body.light-mode #experience h2 {
+  background: #bba7db;
 }
