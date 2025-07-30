@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.body.appendChild(toggleButton);
 });
 
-// -------- ABOUT ME CARD TOGGLE --------
+// -------- ABOUT ME --------
 function toggleAboutMe() {
   const img = document.querySelector('.about-clickable');
   const card = document.getElementById('aboutMeCard');
@@ -41,7 +41,7 @@ function toggleAboutMe() {
   }
 }
 
-// -------- MENU (hover para mostrar submenú) --------
+// -------- MENU --------
 const toggles = document.querySelectorAll('[data-bs-toggle="collapse"]');
 
 toggles.forEach(toggle => {
